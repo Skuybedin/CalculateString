@@ -9,7 +9,7 @@ namespace CalculateStringConsole.Tests
         public void CalcWordCount_return_3()
         {
             //arrange
-            CalculateString calc = new CalculateString("Привет, как дела? :)");
+            CalculateString calc = new CalculateString("РџСЂРёРІРµС‚, РєР°Рє РґРµР»Р°? :)");
             int expected = 3;
 
             //act
@@ -23,7 +23,7 @@ namespace CalculateStringConsole.Tests
         public void CalcWordCount_return_9()
         {
             //arrange
-            CalculateString calc = new CalculateString("Меня зовут Никита, мне 25 лет и я из Москвы");
+            CalculateString calc = new CalculateString("РњРµРЅСЏ Р·РѕРІСѓС‚ РќРёРєРёС‚Р°, РјРЅРµ 25 Р»РµС‚ Рё СЏ РёР· РњРѕСЃРєРІС‹");
             int expected = 9;
 
             //act
@@ -51,8 +51,8 @@ namespace CalculateStringConsole.Tests
         public void GetLanguage_return_Russian()
         {
             //arrange
-            CalculateString calc = new CalculateString("Какая сегодня красивая погода!");
-            string expected = "Русский";
+            CalculateString calc = new CalculateString("РљР°РєР°СЏ СЃРµРіРѕРґРЅСЏ РєСЂР°СЃРёРІР°СЏ РїРѕРіРѕРґР°!");
+            string expected = "ГђГіГ±Г±ГЄГЁГ©";
 
             //act
             string result = calc.GetLanguage();
@@ -79,7 +79,7 @@ namespace CalculateStringConsole.Tests
         public void CalcVowelCount_return_6()
         {
             //arrange
-            CalculateString calc = new CalculateString("Ааа! Что это?");
+            CalculateString calc = new CalculateString("РђР°Р°! Р§С‚Рѕ СЌС‚Рѕ?");
             int expected = 6;
 
             //act
